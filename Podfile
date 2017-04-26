@@ -6,5 +6,6 @@ target 'FBSearch' do
   use_frameworks!
 
   # Pods for FBSearch
+  pod "EasyToast"
 
 end

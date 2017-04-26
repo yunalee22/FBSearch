@@ -26,6 +26,11 @@
 		17437E701EB023AD00D21918 /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E621EB023AD00D21918 /* users.png */; };
 		17437E721EB02F2A00D21918 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E711EB02F2A00D21918 /* FavoritesViewController.swift */; };
 		17437E741EB02F3600D21918 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E731EB02F3600D21918 /* AboutViewController.swift */; };
+		178E0C851EB083B10018AC09 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E0C841EB083B10018AC09 /* UsersViewController.swift */; };
+		178E0C871EB083BF0018AC09 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E0C861EB083BF0018AC09 /* PagesViewController.swift */; };
+		178E0C891EB083CE0018AC09 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E0C881EB083CE0018AC09 /* EventsViewController.swift */; };
+		178E0C8B1EB083DC0018AC09 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E0C8A1EB083DC0018AC09 /* PlacesViewController.swift */; };
+		178E0C8D1EB083EC0018AC09 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E0C8C1EB083EC0018AC09 /* GroupsViewController.swift */; };
 		17D84C6D1EAFDBDF00346547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D84C6C1EAFDBDF00346547 /* AppDelegate.swift */; };
 		17D84C721EAFDBDF00346547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C701EAFDBDF00346547 /* Main.storyboard */; };
 		17D84C741EAFDBDF00346547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C731EAFDBDF00346547 /* Assets.xcassets */; };
@@ -57,6 +62,11 @@
 		17437E621EB023AD00D21918 /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = users.png; path = FBSearch/Img/users.png; sourceTree = "<group>"; };
 		17437E711EB02F2A00D21918 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		17437E731EB02F3600D21918 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		178E0C841EB083B10018AC09 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		178E0C861EB083BF0018AC09 /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
+		178E0C881EB083CE0018AC09 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		178E0C8A1EB083DC0018AC09 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		178E0C8C1EB083EC0018AC09 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		17D84C691EAFDBDF00346547 /* FBSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D84C6C1EAFDBDF00346547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D84C711EAFDBDF00346547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,11 +101,12 @@
 		17437E4A1EB00EFE00D21918 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17437E4D1EB01C1300D21918 /* SWRevealViewController */,
 				17437E461EAFED2D00D21918 /* MenuViewController.swift */,
+				17437E4D1EB01C1300D21918 /* SWRevealViewController */,
 				17437E481EB00EF700D21918 /* HomeViewController.swift */,
 				17437E711EB02F2A00D21918 /* FavoritesViewController.swift */,
 				17437E731EB02F3600D21918 /* AboutViewController.swift */,
+				178E0C8E1EB088C30018AC09 /* Search Results */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -129,6 +140,18 @@
 				17437E621EB023AD00D21918 /* users.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		178E0C8E1EB088C30018AC09 /* Search Results */ = {
+			isa = PBXGroup;
+			children = (
+				178E0C841EB083B10018AC09 /* UsersViewController.swift */,
+				178E0C861EB083BF0018AC09 /* PagesViewController.swift */,
+				178E0C881EB083CE0018AC09 /* EventsViewController.swift */,
+				178E0C8A1EB083DC0018AC09 /* PlacesViewController.swift */,
+				178E0C8C1EB083EC0018AC09 /* GroupsViewController.swift */,
+			);
+			name = "Search Results";
 			sourceTree = "<group>";
 		};
 		17D84C601EAFDBDF00346547 = {
@@ -323,10 +346,15 @@
 			files = (
 				17437E741EB02F3600D21918 /* AboutViewController.swift in Sources */,
 				17437E471EAFED2D00D21918 /* MenuViewController.swift in Sources */,
+				178E0C8B1EB083DC0018AC09 /* PlacesViewController.swift in Sources */,
 				17D84C6D1EAFDBDF00346547 /* AppDelegate.swift in Sources */,
+				178E0C871EB083BF0018AC09 /* PagesViewController.swift in Sources */,
+				178E0C8D1EB083EC0018AC09 /* GroupsViewController.swift in Sources */,
+				178E0C851EB083B10018AC09 /* UsersViewController.swift in Sources */,
 				17437E491EB00EF700D21918 /* HomeViewController.swift in Sources */,
 				17437E721EB02F2A00D21918 /* FavoritesViewController.swift in Sources */,
 				17437E511EB01C2B00D21918 /* SWRevealViewController.m in Sources */,
+				178E0C891EB083CE0018AC09 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
