@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17437E471EAFED2D00D21918 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E461EAFED2D00D21918 /* MenuViewController.swift */; };
+		17437E491EB00EF700D21918 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E481EB00EF700D21918 /* HomeViewController.swift */; };
+		17437E511EB01C2B00D21918 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17437E501EB01C2B00D21918 /* SWRevealViewController.m */; };
+		17437E631EB023AD00D21918 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E551EB023AD00D21918 /* album.png */; };
+		17437E641EB023AD00D21918 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E561EB023AD00D21918 /* empty.png */; };
+		17437E651EB023AD00D21918 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E571EB023AD00D21918 /* event.png */; };
+		17437E661EB023AD00D21918 /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E581EB023AD00D21918 /* favorite.png */; };
+		17437E671EB023AD00D21918 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E591EB023AD00D21918 /* fb.png */; };
+		17437E681EB023AD00D21918 /* filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5A1EB023AD00D21918 /* filled.png */; };
+		17437E691EB023AD00D21918 /* groups.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5B1EB023AD00D21918 /* groups.png */; };
+		17437E6A1EB023AD00D21918 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5C1EB023AD00D21918 /* home.png */; };
+		17437E6B1EB023AD00D21918 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5D1EB023AD00D21918 /* menu.png */; };
+		17437E6C1EB023AD00D21918 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5E1EB023AD00D21918 /* options.png */; };
+		17437E6D1EB023AD00D21918 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E5F1EB023AD00D21918 /* page.png */; };
+		17437E6E1EB023AD00D21918 /* place.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E601EB023AD00D21918 /* place.png */; };
+		17437E6F1EB023AD00D21918 /* posts.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E611EB023AD00D21918 /* posts.png */; };
+		17437E701EB023AD00D21918 /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 17437E621EB023AD00D21918 /* users.png */; };
+		17437E721EB02F2A00D21918 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E711EB02F2A00D21918 /* FavoritesViewController.swift */; };
+		17437E741EB02F3600D21918 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437E731EB02F3600D21918 /* AboutViewController.swift */; };
 		17D84C6D1EAFDBDF00346547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D84C6C1EAFDBDF00346547 /* AppDelegate.swift */; };
-		17D84C6F1EAFDBDF00346547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D84C6E1EAFDBDF00346547 /* ViewController.swift */; };
 		17D84C721EAFDBDF00346547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C701EAFDBDF00346547 /* Main.storyboard */; };
 		17D84C741EAFDBDF00346547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C731EAFDBDF00346547 /* Assets.xcassets */; };
 		17D84C771EAFDBDF00346547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C751EAFDBDF00346547 /* LaunchScreen.storyboard */; };
+		17D84C811EAFDDF100346547 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17D84C801EAFDDF100346547 /* Podfile */; };
+		1F6E8FF3167058199A26F8BE /* Pods_FBSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265880D8870A46CCF79690B /* Pods_FBSearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091635486AAA4B5E1D94E935 /* Pods-FBSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBSearch/Pods-FBSearch.release.xcconfig"; sourceTree = "<group>"; };
+		17437E461EAFED2D00D21918 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		17437E481EB00EF700D21918 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17437E4E1EB01C2A00D21918 /* FBSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		17437E4F1EB01C2B00D21918 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		17437E501EB01C2B00D21918 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		17437E551EB023AD00D21918 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = album.png; path = FBSearch/Img/album.png; sourceTree = "<group>"; };
+		17437E561EB023AD00D21918 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty.png; path = FBSearch/Img/empty.png; sourceTree = "<group>"; };
+		17437E571EB023AD00D21918 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = event.png; path = FBSearch/Img/event.png; sourceTree = "<group>"; };
+		17437E581EB023AD00D21918 /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = favorite.png; path = FBSearch/Img/favorite.png; sourceTree = "<group>"; };
+		17437E591EB023AD00D21918 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fb.png; path = FBSearch/Img/fb.png; sourceTree = "<group>"; };
+		17437E5A1EB023AD00D21918 /* filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = filled.png; path = FBSearch/Img/filled.png; sourceTree = "<group>"; };
+		17437E5B1EB023AD00D21918 /* groups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = groups.png; path = FBSearch/Img/groups.png; sourceTree = "<group>"; };
+		17437E5C1EB023AD00D21918 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = FBSearch/Img/home.png; sourceTree = "<group>"; };
+		17437E5D1EB023AD00D21918 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = FBSearch/Img/menu.png; sourceTree = "<group>"; };
+		17437E5E1EB023AD00D21918 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = options.png; path = FBSearch/Img/options.png; sourceTree = "<group>"; };
+		17437E5F1EB023AD00D21918 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page.png; path = FBSearch/Img/page.png; sourceTree = "<group>"; };
+		17437E601EB023AD00D21918 /* place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = place.png; path = FBSearch/Img/place.png; sourceTree = "<group>"; };
+		17437E611EB023AD00D21918 /* posts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = posts.png; path = FBSearch/Img/posts.png; sourceTree = "<group>"; };
+		17437E621EB023AD00D21918 /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = users.png; path = FBSearch/Img/users.png; sourceTree = "<group>"; };
+		17437E711EB02F2A00D21918 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		17437E731EB02F3600D21918 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		17D84C691EAFDBDF00346547 /* FBSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D84C6C1EAFDBDF00346547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17D84C6E1EAFDBDF00346547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17D84C711EAFDBDF00346547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17D84C731EAFDBDF00346547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17D84C761EAFDBDF00346547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17D84C781EAFDBDF00346547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D84C801EAFDDF100346547 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D79D5DEC07837A82FFA6B5A /* Pods-FBSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBSearch/Pods-FBSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		9265880D8870A46CCF79690B /* Pods_FBSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6E8FF3167058199A26F8BE /* Pods_FBSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17437E421EAFE4E700D21918 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17437E541EB0239E00D21918 /* Icons */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		17437E4A1EB00EFE00D21918 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17437E4D1EB01C1300D21918 /* SWRevealViewController */,
+				17437E461EAFED2D00D21918 /* MenuViewController.swift */,
+				17437E481EB00EF700D21918 /* HomeViewController.swift */,
+				17437E711EB02F2A00D21918 /* FavoritesViewController.swift */,
+				17437E731EB02F3600D21918 /* AboutViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		17437E4D1EB01C1300D21918 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17437E4F1EB01C2B00D21918 /* SWRevealViewController.h */,
+				17437E501EB01C2B00D21918 /* SWRevealViewController.m */,
+				17437E4E1EB01C2A00D21918 /* FBSearch-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		17437E541EB0239E00D21918 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				17437E551EB023AD00D21918 /* album.png */,
+				17437E561EB023AD00D21918 /* empty.png */,
+				17437E571EB023AD00D21918 /* event.png */,
+				17437E581EB023AD00D21918 /* favorite.png */,
+				17437E591EB023AD00D21918 /* fb.png */,
+				17437E5A1EB023AD00D21918 /* filled.png */,
+				17437E5B1EB023AD00D21918 /* groups.png */,
+				17437E5C1EB023AD00D21918 /* home.png */,
+				17437E5D1EB023AD00D21918 /* menu.png */,
+				17437E5E1EB023AD00D21918 /* options.png */,
+				17437E5F1EB023AD00D21918 /* page.png */,
+				17437E601EB023AD00D21918 /* place.png */,
+				17437E611EB023AD00D21918 /* posts.png */,
+				17437E621EB023AD00D21918 /* users.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		17D84C601EAFDBDF00346547 = {
 			isa = PBXGroup;
 			children = (
 				17D84C6B1EAFDBDF00346547 /* FBSearch */,
+				17D84C801EAFDDF100346547 /* Podfile */,
+				17437E421EAFE4E700D21918 /* Resources */,
 				17D84C6A1EAFDBDF00346547 /* Products */,
+				35FF118258DC5C89B9FDC0F3 /* Pods */,
+				2EF8D9387154747DA245DD96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +155,30 @@
 			isa = PBXGroup;
 			children = (
 				17D84C6C1EAFDBDF00346547 /* AppDelegate.swift */,
-				17D84C6E1EAFDBDF00346547 /* ViewController.swift */,
+				17437E4A1EB00EFE00D21918 /* View Controllers */,
 				17D84C701EAFDBDF00346547 /* Main.storyboard */,
-				17D84C731EAFDBDF00346547 /* Assets.xcassets */,
 				17D84C751EAFDBDF00346547 /* LaunchScreen.storyboard */,
+				17D84C731EAFDBDF00346547 /* Assets.xcassets */,
 				17D84C781EAFDBDF00346547 /* Info.plist */,
 			);
 			path = FBSearch;
+			sourceTree = "<group>";
+		};
+		2EF8D9387154747DA245DD96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9265880D8870A46CCF79690B /* Pods_FBSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35FF118258DC5C89B9FDC0F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D79D5DEC07837A82FFA6B5A /* Pods-FBSearch.debug.xcconfig */,
+				091635486AAA4B5E1D94E935 /* Pods-FBSearch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17D84C7B1EAFDBDF00346547 /* Build configuration list for PBXNativeTarget "FBSearch" */;
 			buildPhases = (
+				D041F34D2A78527703B3A6B7 /* [CP] Check Pods Manifest.lock */,
 				17D84C651EAFDBDF00346547 /* Sources */,
 				17D84C661EAFDBDF00346547 /* Frameworks */,
 				17D84C671EAFDBDF00346547 /* Resources */,
+				E3833FCC8C9430B54155EAAC /* [CP] Embed Pods Frameworks */,
+				25397E6DBFCF2D0A814738DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +217,7 @@
 					17D84C681EAFDBDF00346547 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2VRGQGASF4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,21 +245,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17437E701EB023AD00D21918 /* users.png in Resources */,
 				17D84C771EAFDBDF00346547 /* LaunchScreen.storyboard in Resources */,
 				17D84C741EAFDBDF00346547 /* Assets.xcassets in Resources */,
+				17437E6C1EB023AD00D21918 /* options.png in Resources */,
+				17D84C811EAFDDF100346547 /* Podfile in Resources */,
+				17437E6F1EB023AD00D21918 /* posts.png in Resources */,
+				17437E6E1EB023AD00D21918 /* place.png in Resources */,
+				17437E6B1EB023AD00D21918 /* menu.png in Resources */,
+				17437E641EB023AD00D21918 /* empty.png in Resources */,
+				17437E691EB023AD00D21918 /* groups.png in Resources */,
+				17437E6D1EB023AD00D21918 /* page.png in Resources */,
+				17437E671EB023AD00D21918 /* fb.png in Resources */,
+				17437E681EB023AD00D21918 /* filled.png in Resources */,
 				17D84C721EAFDBDF00346547 /* Main.storyboard in Resources */,
+				17437E651EB023AD00D21918 /* event.png in Resources */,
+				17437E6A1EB023AD00D21918 /* home.png in Resources */,
+				17437E661EB023AD00D21918 /* favorite.png in Resources */,
+				17437E631EB023AD00D21918 /* album.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25397E6DBFCF2D0A814738DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBSearch/Pods-FBSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D041F34D2A78527703B3A6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3833FCC8C9430B54155EAAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBSearch/Pods-FBSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17D84C651EAFDBDF00346547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D84C6F1EAFDBDF00346547 /* ViewController.swift in Sources */,
+				17437E741EB02F3600D21918 /* AboutViewController.swift in Sources */,
+				17437E471EAFED2D00D21918 /* MenuViewController.swift in Sources */,
 				17D84C6D1EAFDBDF00346547 /* AppDelegate.swift in Sources */,
+				17437E491EB00EF700D21918 /* HomeViewController.swift in Sources */,
+				17437E721EB02F2A00D21918 /* FavoritesViewController.swift in Sources */,
+				17437E511EB01C2B00D21918 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,26 +447,33 @@
 		};
 		17D84C7C1EAFDBDF00346547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D79D5DEC07837A82FFA6B5A /* Pods-FBSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2VRGQGASF4;
 				INFOPLIST_FILE = FBSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.FBSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBSearch/FBSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		17D84C7D1EAFDBDF00346547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091635486AAA4B5E1D94E935 /* Pods-FBSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2VRGQGASF4;
 				INFOPLIST_FILE = FBSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.FBSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBSearch/FBSearch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +497,7 @@
 				17D84C7D1EAFDBDF00346547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
