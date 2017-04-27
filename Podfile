@@ -7,5 +7,7 @@ target 'FBSearch' do
 
   # Pods for FBSearch
   pod "EasyToast"
-
+  pod "SwiftSpinner"
+  pod "Alamofire"
+  pod "SwiftyJSON"
 end

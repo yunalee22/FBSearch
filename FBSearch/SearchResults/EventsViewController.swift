@@ -1,5 +1,5 @@
 //
-//  UsersViewController.swift
+//  EventsViewController.swift
 //  FBSearch
 //
 //  Created by Yuna Lee on 4/26/17.
@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class UsersViewController: UIViewController {
+class EventsViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    var eventsData: [JSON]?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  PlacesViewController.swift
+//  PagesViewController.swift
 //  FBSearch
 //
 //  Created by Yuna Lee on 4/26/17.
@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class PlacesViewController: UIViewController {
+class PagesViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    var pagesData: [JSON]?
     
     override func viewDidLoad() {
         super.viewDidLoad()

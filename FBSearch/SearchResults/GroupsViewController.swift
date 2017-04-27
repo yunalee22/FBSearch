@@ -1,5 +1,5 @@
 //
-//  PagesViewController.swift
+//  GroupsViewController.swift
 //  FBSearch
 //
 //  Created by Yuna Lee on 4/26/17.
@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class PagesViewController: UIViewController {
+class GroupsViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    var groupsData: [JSON]?
     
     override func viewDidLoad() {
         super.viewDidLoad()

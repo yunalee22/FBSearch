@@ -64,7 +64,7 @@
                         <outlet property="menuButton" destination="0dO-8U-xhU" id="fH1-4b-Lts"/>
                         <outlet property="searchButton" destination="DEz-fw-raP" id="WfZ-bG-4Qp"/>
                         <outlet property="searchTextField" destination="cMN-KV-g8T" id="rqH-8t-26Q"/>
-                        <segue destination="S7E-t3-fpb" kind="show" identifier="search_segue" id="yu3-E3-I2u"/>
+                        <segue destination="NMM-Wd-hMs" kind="show" identifier="search_segue" animates="NO" id="fgI-Ha-LR4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,7 +79,7 @@
                         <viewControllerLayoutGuide type="top" id="oqP-nG-wjx"/>
                         <viewControllerLayoutGuide type="bottom" id="zty-4f-8qZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RKg-bX-MBy">
+                    <view key="view" contentMode="scaleToFill" id="RKg-bX-MBy" customClass="Pages">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -224,44 +224,108 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZIr-I9-khW">
+                                <rect key="frame" x="0.0" y="64" width="320" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="result_cell" id="CGI-pp-4GI" customClass="ResultCell" customModule="FBSearch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CGI-pp-4GI" id="maB-zI-Pyp">
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N4-Rl-aju">
+                                                    <rect key="frame" x="225" y="7" width="28" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button" image="empty.png"/>
+                                                    <connections>
+                                                        <action selector="onFavoriteButtonClick:" destination="CGI-pp-4GI" eventType="touchUpInside" id="iTJ-lw-zKx"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elz-bw-uEk">
+                                                    <rect key="frame" x="65" y="11" width="152" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4i0-F7-QuP">
+                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="favoriteButton" destination="4N4-Rl-aju" id="Nfr-lm-jCQ"/>
+                                            <outlet property="iconImageView" destination="4i0-F7-QuP" id="Nu7-vq-lvb"/>
+                                            <outlet property="nameLabel" destination="elz-bw-uEk" id="cMd-D4-1sW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XxN-Wy-Whz" id="rOY-5h-TIK"/>
+                                    <outlet property="delegate" destination="XxN-Wy-Whz" id="uMm-Ps-Rnx"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N7-rh-sIm">
+                                <rect key="frame" x="55" y="485" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="onPreviousButtonClick:" destination="XxN-Wy-Whz" eventType="touchUpInside" id="cgY-kJ-8Ab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brQ-zZ-WLe">
+                                <rect key="frame" x="225" y="485" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="onNextButtonClick:" destination="XxN-Wy-Whz" eventType="touchUpInside" id="NH6-6e-ffb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Users" image="users.png" id="P58-oU-7r2"/>
                     <connections>
                         <outlet property="menuButton" destination="MiD-vw-U1u" id="ejd-vt-8wd"/>
+                        <outlet property="nextButton" destination="brQ-zZ-WLe" id="ntP-CL-TqE"/>
+                        <outlet property="previousButton" destination="2N7-rh-sIm" id="fhb-20-fYk"/>
+                        <outlet property="usersTableView" destination="ZIr-I9-khW" id="yGm-G0-lpe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFS-qR-Cxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5027" y="-2280"/>
+            <point key="canvasLocation" x="5026.875" y="-2280.6338028169016"/>
         </scene>
         <!--Reveal View Controller-->
-        <scene sceneID="Cfh-9u-Vsg">
+        <scene sceneID="xsR-C9-Hz3">
             <objects>
-                <viewController id="S7E-t3-fpb" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController id="eMd-Kp-YSM" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ufT-b0-BYf"/>
-                        <viewControllerLayoutGuide type="bottom" id="zNg-qO-hCI"/>
+                        <viewControllerLayoutGuide type="top" id="7ZK-Mv-ejb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7tG-Ma-zSh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fR4-N9-3nU">
+                    <view key="view" contentMode="scaleToFill" id="bxu-T4-9Jg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="NMM-Wd-hMs" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="ePx-kp-t2B"/>
-                        <segue destination="FTg-pM-Pt3" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="CBj-fq-N41"/>
+                        <segue destination="NMM-Wd-hMs" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="LN2-Cl-T9e"/>
+                        <segue destination="FTg-pM-Pt3" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="XX0-77-MC5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E49-6h-Mt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzQ-eg-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2758" y="-964"/>
+            <point key="canvasLocation" x="2717" y="-564"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Search Results View Controller-->
         <scene sceneID="Aju-4u-qXc">
             <objects>
-                <tabBarController id="NMM-Wd-hMs" sceneMemberID="viewController">
+                <tabBarController id="NMM-Wd-hMs" customClass="SearchResultsViewController" customModule="FBSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="sm1-Yt-XLd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -363,7 +427,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="FTg-pM-Pt3" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="ogq-LB-O7k"/>
+                        <segue destination="FTg-pM-Pt3" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" animates="NO" id="ogq-LB-O7k"/>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="0E0-Wu-nCR"/>
                     </connections>
                 </viewController>
@@ -427,9 +491,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="GgH-5s-OXt"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FxF-7W-UQv">
                                         <rect key="frame" x="0.0" y="179" width="320" height="44"/>
@@ -490,10 +551,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="567-A8-SDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-56" y="-261"/>
+            <point key="canvasLocation" x="24" y="219"/>
         </scene>
     </scenes>
     <resources>
+        <image name="empty.png" width="48" height="48"/>
         <image name="event.png" width="30" height="30"/>
         <image name="favorite.png" width="48" height="48"/>
         <image name="fb.png" width="25" height="25"/>
@@ -505,7 +567,7 @@
         <image name="users.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ogq-LB-O7k"/>
-        <segue reference="0E0-Wu-nCR"/>
+        <segue reference="XX0-77-MC5"/>
+        <segue reference="fgI-Ha-LR4"/>
     </inferredMetricsTieBreakers>
 </document>
