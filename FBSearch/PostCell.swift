@@ -1,6 +1,14 @@
+//
+//  PostCell.swift
+//  FBSearch
+//
+//  Created by Yuna Lee on 4/27/17.
+//  Copyright © 2017 USC. All rights reserved.
+//
+
 import Foundation
 
-class ResultCell : UITableViewCell {
+class PostCell : UITableViewCell {
     
     var id: String!
     

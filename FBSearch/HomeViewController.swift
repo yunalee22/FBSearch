@@ -109,9 +109,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             // Show search results
             self.performSegue(withIdentifier: "search_segue", sender: self)
-            
-            // Hide spinner
-            SwiftSpinner.hide()
         }
     }
     
