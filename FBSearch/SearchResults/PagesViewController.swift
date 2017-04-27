@@ -12,7 +12,7 @@ import Alamofire
 import SwiftSpinner
 
 class PagesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-        
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var previousButton: UIButton!
@@ -23,6 +23,7 @@ class PagesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     var albumsData: [JSON]!
     var postsData: [JSON]!
+    var originData: [String : JSON]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,7 @@ class PagesViewController: UIViewController, UITableViewDataSource, UITableViewD
             let destViewController:DetailsViewController = segue.destination as! DetailsViewController
             destViewController.albumData = self.albumsData
             destViewController.postsData = self.postsData
+            destViewController.originData = self.originData
         }
     }
     
@@ -77,13 +79,18 @@ class PagesViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             // Show details
             self.performSegue(withIdentifier: "details_segue", sender: self)
+            
+            // Hide spinner
+            SwiftSpinner.hide()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCell = tableView.cellForRow(at: indexPath) as! ResultCell
         let id = selectedCell.id
+        self.originData = selectedCell.data
         showDetails(id: id!)
+        print ("Showing details for id " + id!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -97,8 +104,9 @@ class PagesViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "result_cell", for: indexPath) as! ResultCell
         let ind = 10 * currentPage + indexPath.row
         
-        // Populate cell dataprin
+        // Populate cell
         cell.id = data![ind]["id"].string
+        cell.data = data![ind].dictionary
         cell.nameLabel?.text = data![ind]["name"].string
         let imgUrl = URL(string: data![ind]["picture"]["data"]["url"].string!)
         let imgData = try? Data(contentsOf: imgUrl!)
@@ -149,5 +157,5 @@ class PagesViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
 }

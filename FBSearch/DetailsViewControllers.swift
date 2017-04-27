@@ -14,15 +14,13 @@ class DetailsViewController: UITabBarController {
     
     var albumData: [JSON]!
     var postsData: [JSON]!
+    var originData: [String : JSON]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Loaded")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("Updating")
         // Load data into tabs
         updateDetailsViews()
         
@@ -34,11 +32,16 @@ class DetailsViewController: UITabBarController {
         // Albums tab
         let albumsViewController = self.viewControllers![0] as! AlbumsViewController
         albumsViewController.data = self.albumData
-        albumsViewController.tableView.reloadData()
+        albumsViewController.iconUrl = self.originData["picture"]!["data"]["url"].string
+        albumsViewController.name = self.originData["name"]!.string
+        albumsViewController.reloadTableIfDataExists()
         
         // Posts tab
         let postsViewController = self.viewControllers![1] as! PostsViewController
         postsViewController.data = self.postsData
+        postsViewController.imgUrl = self.originData["picture"]!["data"]["url"].string
+        postsViewController.iconUrl = self.originData["picture"]!["data"]["url"].string
+        postsViewController.name = self.originData["name"]!.string
     }
     
     

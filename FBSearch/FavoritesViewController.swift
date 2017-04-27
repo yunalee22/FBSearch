@@ -9,19 +9,10 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
-    
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+class FavoritesViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set up slide out menu
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
     }
     
     override func didReceiveMemoryWarning() {

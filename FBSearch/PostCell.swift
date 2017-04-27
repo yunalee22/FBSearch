@@ -10,13 +10,8 @@ import Foundation
 
 class PostCell : UITableViewCell {
     
-    var id: String!
-    
     @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
     
-    @IBAction func onFavoriteButtonClick(_ sender: Any) {
-        
-    }
 }

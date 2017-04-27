@@ -23,6 +23,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     
     var albumsData: [JSON]!
     var postsData: [JSON]!
+    var originData: [String : JSON]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
             let destViewController:DetailsViewController = segue.destination as! DetailsViewController
             destViewController.albumData = self.albumsData
             destViewController.postsData = self.postsData
+            destViewController.originData = self.originData
         }
     }
     
@@ -77,13 +79,18 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
             
             // Show details
             self.performSegue(withIdentifier: "details_segue", sender: self)
+            
+            // Hide spinner
+            SwiftSpinner.hide()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCell = tableView.cellForRow(at: indexPath) as! ResultCell
         let id = selectedCell.id
+        self.originData = selectedCell.data
         showDetails(id: id!)
+        print ("Showing details for id " + id!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -97,8 +104,9 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "result_cell", for: indexPath) as! ResultCell
         let ind = 10 * currentPage + indexPath.row
         
-        // Populate cell dataprin
+        // Populate cell
         cell.id = data![ind]["id"].string
+        cell.data = data![ind].dictionary
         cell.nameLabel?.text = data![ind]["name"].string
         let imgUrl = URL(string: data![ind]["picture"]["data"]["url"].string!)
         let imgData = try? Data(contentsOf: imgUrl!)
